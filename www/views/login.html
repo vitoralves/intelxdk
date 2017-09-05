@@ -1,0 +1,48 @@
+<ion-view name="login" ng-controller="loginCtrl as vm">
+  <ion-content class="bg-login">
+
+    <!-- Orientação Retrato -->
+    <div class="row">
+      <div class="col col-90 col-offset-10">
+        <img class="img-login" src="imagens/logo-fdf.png"/>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+          <h2 class="tit-login">Portal do Aluno</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-80 col-offset-10">
+        <div class="list list-inset pos-input bg-div">
+          <label class="item item-input item-stacked-label bg-div">
+            <span class="input-label lb-input">Usuário:</span>
+            <input type="number" ng-model="vm.usuario" id="idUsuario">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-80 col-offset-10">
+        <div class="list list-inset pos-input bg-div">
+          <label class="item item-input item-stacked-label bg-div">
+            <span class="input-label lb-input">Senha:</span>
+            <input type="password" ng-model="vm.senha" id="idSenha">
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col-80  col-offset-10">
+        <button class="button button-block button-light" ng-click="vm.logou()">
+          Entrar
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

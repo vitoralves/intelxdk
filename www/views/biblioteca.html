@@ -1,0 +1,67 @@
+<ion-view view-title="{{biblioteca}}" ng-controller="BiblioPesquisa as vm">
+	<ion-content>
+
+   <div class="row">
+			<div class="col">
+				<span class="lb-tit-input-biblio"><strong>Pesquisar em:</strong></span>
+			</div>
+		</div>
+
+		<div class="row" ng-if="vm.lgListaTipoMaterial">
+				<div class="col text-left">
+					Carregando...<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+				</div>
+		</div>
+		<div class="row" ng-if="!vm.lgListaTipoMaterial">
+			<div class="col">
+				<select id="idTipoMaterial" ng-model="vm.idTipoMaterial">
+					<option ng-repeat="tipo in vm.listaTipoMaterial"
+									ng-selected="vm.idTipoMaterial == tipo.id"
+									value="{{tipo.id}}">{{tipo.nome}}</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row">
+      <div class="col ">
+        <div class="list list-inset pos-input bg-div-biblio">
+          <label class="item item-input item-stacked-label bg-div-biblio">
+            <span class="input-label lb-tit-input-biblio"><strong>Título:</strong></span>
+            <input type="text" id="idTitulo" ng-model="vm.titulo">
+          </label>
+        </div>
+      </div>
+    </div>
+
+		<div class="row">
+      <div class="col ">
+        <div class="list list-inset pos-input bg-div-biblio">
+          <label class="item item-input item-stacked-label bg-div-biblio">
+            <span class="input-label lb-tit-input-biblio"><strong>Autor:</strong></span>
+            <input type="text" id="idAutor" ng-model="vm.autor">
+          </label>
+        </div>
+      </div>
+    </div>
+
+		<div class="row">
+      <div class="col ">
+        <div class="list list-inset pos-input bg-div-biblio">
+          <label class="item item-input item-stacked-label bg-div-biblio">
+            <span class="input-label lb-tit-input-biblio"><strong>Assunto:</strong></span>
+            <input type="text" id="idAssunto" ng-model="vm.assunto">
+          </label>
+        </div>
+      </div>
+    </div>
+
+		<div class="row">
+			<div class="col">
+						<button  class="button button-positive" id="idPesqBiblio" ng-click="vm.gravar()">
+							PESQUISAR <i class="icon ion-ios-search"></i>
+						</button>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

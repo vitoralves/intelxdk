@@ -1,0 +1,63 @@
+<ion-view view-title="{{financeiro}}" ng-controller="FinanceiroCtrl as vm">
+
+    <ion-content>
+       <div class="item-financeiro">
+            <select class="select-blue" ng-model="vm.semestre" ng-change="vm.carregarSemestre()">
+                <option
+                    class="option-financeiro"
+                    ng-repeat="mat in vm.matriculas"
+                    value="{{mat.id}}"
+                    ng-selected="vm.semestre == mat.id"
+                >{{ mat.serie }}</option>
+            </select>
+        </div>
+    </ion-content>
+
+    <ion-content class="margin-top-big">
+    <div class="row" ng-if="vm.isLoading">
+        <div class="col text-center"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+    </div>
+    <ion-list ng-if="!vm.isLoading">
+
+        <ion-item class="item-financeiro" ng-repeat="mensalidade in vm.mensalidades">
+            <div class="row gray-line">
+                <div class="col item-text-wrap"><strong>{{ mensalidade.documento }}</strong></div>
+            </div>
+
+            <div class="row">
+                <div class="col col-10"><strong>#</strong></div>
+                <div class="col col-33"><strong>Vencimento</strong></div>
+                <div class="col col-33 text-right"><strong>Valor</strong></div>
+                <div class="col col-25 text-right"><strong>Líquido</strong></div>
+            </div>
+
+            <div class="row">
+                <div class="col col-10"> {{mensalidade.parcela}} </div>
+                <div class="col col-33"> {{mensalidade.documento}} </div>
+                <div class="col col-33 text-right"> {{mensalidade.valor | currency : "R$ "}} </div>
+                <div class="col col-25 text-right"> {{mensalidade.valor1 | currency : "R$ "}} </div>
+            </div>
+
+            <div class="row">
+                <div class="col"><strong>Data de Pagamento</strong></div>
+                <div class="col text-right"><strong>Valor Pago</strong></div>
+            </div>
+
+            <div class="row">
+                <div class="col"> {{mensalidade.situacao}} </div>
+                <div class="col text-right"> {{mensalidade.valorPago | currency : "R$ " || '--'}} </div>
+            </div>
+
+            <div class="row">
+                <div class="col"><strong>Nº Boleto</strong></div>
+            </div>
+            <div class="row">
+                <div class="col"> {{mensalidade.nome}} </div>
+            </div>
+
+        </ion-item>
+
+    </ion-list>
+
+
+</ion-view>

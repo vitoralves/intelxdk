@@ -1,0 +1,703 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "creationData": {
+      "type": "App Designer",
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+      "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
+      "projectGuid": "47d97f3c-2cd7-4460-bab1-9e2889fa0f92",
+      "lastModifiedDate": 1504632853211,
+      "creationDate": 1462393179690
+    },
+    "XDK-app-designer": "true",
+    "sourceDirectory": "www",
+    "startFile": "index.html",
+    "projectFiles": {
+      "xdk-publish-meta-data.json": {
+        "settings": {
+          "project": {
+            "XDK-not-deployed": "True"
+          }
+        }
+      }
+    },
+    "projectDirectories": {},
+    "libraries": [],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [
+      {
+        "id": "cordova-plugin-splashscreen",
+        "version": "3.2.0",
+        "selectedState": "Included",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": [],
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-splashscreen",
+        "permissions": {},
+        "topLevel": true,
+        "gitref": "",
+        "name": "Splashscreen",
+        "description": "Cordova Splashscreen Plugin",
+        "checksum": "c8aeabaf",
+        "cordovaVersion": ">=3.1.0"
+      },
+      {
+        "id": "cordova-plugin-inappbrowser",
+        "name": "InAppBrowser",
+        "version": "1.3.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-inappbrowser",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-inappbrowser",
+        "selectedState": "Included",
+        "checksum": "20f7ee20",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova InAppBrowser Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-whitelist",
+        "name": "Whitelist",
+        "version": "1.2.2",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-whitelist",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-whitelist",
+        "selectedState": "Included",
+        "checksum": "347dc5f",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova Network Whitelist Plugin",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
+      }
+    ],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {
+          "android-minSdkVersion": "16",
+          "android-targetSdkVersion": "21",
+          "android-installLocation": "auto",
+          "android-signed": true,
+          "AndroidLaunchMode": "singleTop",
+          "Fullscreen": false
+        },
+        "isActive_": true,
+        "certificateId_": "Ja3milTt6k-67TY0KfMzSg2",
+        "appName_": "Portal do Aluno",
+        "appID_": "br.com.fdf.portaldoaluno",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "market:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "density": "ldpi",
+            "relPath": "package-assets/logo36x36.png",
+            "width": 36,
+            "height": 36
+          },
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/logo48x48.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/logo72x72.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/logo96x96.png",
+            "width": 96,
+            "height": 96
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "sp_426x320.png",
+            "density": "ldpi",
+            "height": 320,
+            "width": 426,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_470x320.png",
+            "density": "mdpi",
+            "height": 320,
+            "width": 470,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_640x480.png",
+            "density": "hdpi",
+            "height": 480,
+            "width": 640,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_960x720.png",
+            "density": "xhdpi",
+            "height": 720,
+            "width": 960,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "package-assets/logo320x426.png",
+            "density": "ldpi",
+            "height": 426,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/logo320x470.png",
+            "density": "mdpi",
+            "height": 470,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/logo480x640.png",
+            "density": "hdpi",
+            "height": 640,
+            "width": 480,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "package-assets/logo720x960.png",
+            "density": "xhdpi",
+            "height": 960,
+            "width": 720,
+            "orientation": "portrait"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "5.4.1",
+        "crosswalkVersion_": "16",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Eddydata",
+        "appDescription_": "Portal do aluno - FDF",
+        "appVersionCode_": "5"
+      },
+      "iOS": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "iOS",
+        "preferences_": {
+          "ios-configuration": "production",
+          "deployment-target": "8.0",
+          "exit-on-suspend": false,
+          "Fullscreen": true
+        },
+        "isActive_": true,
+        "certificateId_": "ZQ6oTFFZF0-uqrdZv2YZWQ2",
+        "appName_": "Portal do Aluno",
+        "appID_": "br.com.fdf.portaldoaluno",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [
+            "http://*/*",
+            "https://*/*",
+            "tel:*",
+            "sms:*",
+            "mailto:*",
+            "geo:*",
+            "itms:*",
+            "itms-apps:*"
+          ],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "relPath": "package-assets/logo72x72.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "relPath": "package-assets/logo29x29.png",
+            "width": 29,
+            "height": 29
+          },
+          {
+            "relPath": "package-assets/logo58x58.png",
+            "width": 58,
+            "height": 58
+          },
+          {
+            "relPath": "package-assets/logo87x87.png",
+            "width": 87,
+            "height": 87
+          },
+          {
+            "relPath": "package-assets/logo60x60.png",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "relPath": "package-assets/logo120x120.png",
+            "width": 120,
+            "height": 120
+          },
+          {
+            "relPath": "package-assets/logo180x180.png",
+            "width": 180,
+            "height": 180
+          },
+          {
+            "relPath": "package-assets/logo76x76.png",
+            "width": 76,
+            "height": 76
+          },
+          {
+            "relPath": "package-assets/logo152x152.png",
+            "width": 152,
+            "height": 152
+          },
+          {
+            "relPath": "package-assets/logo40x40.png",
+            "width": 40,
+            "height": 40
+          },
+          {
+            "relPath": "package-assets/logo80x80.png",
+            "width": 80,
+            "height": 80
+          },
+          {
+            "relPath": "package-assets/logo57x57.png",
+            "width": 57,
+            "height": 57
+          },
+          {
+            "relPath": "package-assets/logo114x114.png",
+            "width": 114,
+            "height": 114
+          },
+          {
+            "relPath": "package-assets/logo144x144.png",
+            "width": 144,
+            "height": 144
+          },
+          {
+            "relPath": "package-assets/logo50x50.png",
+            "width": 50,
+            "height": 50
+          },
+          {
+            "relPath": "package-assets/logo100x100.png",
+            "width": 100,
+            "height": 100
+          },
+          {
+            "relPath": "package-assets/logo167x167.png",
+            "width": 167,
+            "height": 167
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "sp_750x1334.png",
+            "height": 1334,
+            "width": 750,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_1242x2208.png",
+            "height": 2208,
+            "width": 1242,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_640x1136.png",
+            "height": 1136,
+            "width": 640,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_640x960.png",
+            "height": 960,
+            "width": 640,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_320x480.png",
+            "height": 480,
+            "width": 320,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_1536x2048.png",
+            "height": 2048,
+            "width": 1536,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_768x1024.png",
+            "height": 1024,
+            "width": 768,
+            "orientation": "portrait"
+          },
+          {
+            "relPath": "sp_1334x750.png",
+            "height": 750,
+            "width": 1334,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_2208x1242.png",
+            "height": 1242,
+            "width": 2208,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_2048x1536.png",
+            "height": 1536,
+            "width": 2048,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_1024x768.png",
+            "height": 768,
+            "width": 1024,
+            "orientation": "landscape"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [
+          {
+            "relPath": "portal_do_aluno.mobileprovision",
+            "type": "adhoc"
+          },
+          {
+            "relPath": "portal_do_aluno.mobileprovision",
+            "type": "production"
+          }
+        ],
+        "cordovaCLIVersion_": "5.4.1",
+        "crosswalkVersion_": "16",
+        "appVersion_": "0.0.1",
+        "appAuthor_": "Eddydata",
+        "appDescription_": "Porta do aluno - FDF",
+        "appVersionCode_": ""
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": {
+          "windows-publisher-display-name": "Portal do Aluno",
+          "windows-publisher-id": "PortalDoAlunoUnifacef",
+          "wp81-publisher-id": "PortalDoAlunoUnifacef",
+          "Orientation": "default"
+        },
+        "isActive_": true,
+        "certificateId_": "",
+        "appName_": "Portal do Aluno",
+        "appID_": "br.com.unifacef.portaldoaluno",
+        "appAccess_": {
+          "mode": "whitelist",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": [],
+          "properties": {}
+        },
+        "icons_": [
+          {
+            "relPath": "ic_24.png",
+            "height": 24,
+            "width": 24
+          },
+          {
+            "relPath": "ic_30.png",
+            "height": 30,
+            "width": 30
+          },
+          {
+            "relPath": "ic_33.png",
+            "height": 33,
+            "width": 33
+          },
+          {
+            "relPath": "ic_50.png",
+            "height": 50,
+            "width": 50
+          },
+          {
+            "relPath": "ic_58.png",
+            "height": 58,
+            "width": 58
+          },
+          {
+            "relPath": "ic_70.png",
+            "height": 70,
+            "width": 70
+          },
+          {
+            "relPath": "ic_120.png",
+            "height": 120,
+            "width": 120
+          },
+          {
+            "relPath": "ic_44.png",
+            "height": 44,
+            "width": 44
+          },
+          {
+            "relPath": "ic_62.png",
+            "height": 62,
+            "width": 62
+          },
+          {
+            "relPath": "ic_71.png",
+            "height": 71,
+            "width": 71
+          },
+          {
+            "relPath": "ic_99.png",
+            "height": 99,
+            "width": 99
+          },
+          {
+            "relPath": "ic_106.png",
+            "height": 106,
+            "width": 106
+          },
+          {
+            "relPath": "ic_150.png",
+            "height": 150,
+            "width": 150
+          },
+          {
+            "relPath": "ic_170.png",
+            "height": 170,
+            "width": 170
+          },
+          {
+            "relPath": "ic_210.png",
+            "height": 210,
+            "width": 210
+          },
+          {
+            "relPath": "ic_360.png",
+            "height": 360,
+            "width": 360
+          },
+          {
+            "relPath": "ic_310x150.png",
+            "height": 150,
+            "width": 310
+          },
+          {
+            "relPath": "ic_434x210.png",
+            "height": 210,
+            "width": 434
+          },
+          {
+            "relPath": "ic_744x360.png",
+            "height": 360,
+            "width": 744
+          }
+        ],
+        "splashes_": [
+          {
+            "relPath": "sp_620x300.png",
+            "height": 300,
+            "width": 620,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_480x800.png",
+            "height": 800,
+            "width": 480,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_672x1120.png",
+            "height": 1120,
+            "width": 672,
+            "orientation": "landscape"
+          },
+          {
+            "relPath": "sp_1152x1920.png",
+            "height": 1920,
+            "width": 1152,
+            "orientation": "landscape"
+          }
+        ],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "5.4.1",
+        "crosswalkVersion_": "16",
+        "appVersion_": "0.0.0.1",
+        "appAuthor_": "IV Turma de Sistemas de Informação - Uni-FACEF",
+        "appDescription_": "Porta do aluno - Uni-FACEF"
+      },
+      "WebApp": {
+        "platform_": "webapp",
+        "runtime_": "W3C",
+        "name_": "WebApp",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "IonicTeste",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Chrome": {
+        "platform_": "chromeos",
+        "runtime_": "W3C on Chrome OS",
+        "name_": "Chrome",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "IonicTeste",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Firefox": {
+        "platform_": "firefoxos",
+        "runtime_": "W3C on Firefox OS",
+        "name_": "Firefox",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "IonicTeste",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "Facebook": {
+        "platform_": "facebook",
+        "runtime_": "W3C on Facebook",
+        "name_": "Facebook",
+        "preferences_": {},
+        "isActive_": false,
+        "certificateId_": "",
+        "appName_": "IonicTeste",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appAuthor_": "Intel XDK",
+        "appVersion_": "0.0.1"
+      },
+      "WP81": {
+        "platform_": "wp81",
+        "runtime_": "Cordova 3.x",
+        "name_": "WP81",
+        "preferences_": {},
+        "isActive_": true,
+        "certificateId_": "",
+        "appName_": "IonicTeste",
+        "appID_": "not.yet.specified",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "appVersion_": "0.0.0.1",
+        "cordovaCLIVersion_": "5.4.1",
+        "appAuthor_": "Intel XDK"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "projectTags": [
+      "XDK-disallow-legacy-whitelist"
+    ],
+    "testDirectory": "test"
+  }
+}

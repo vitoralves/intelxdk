@@ -1,0 +1,143 @@
+<ion-side-menus enable-menu-with-back-views="true">
+
+	<ion-side-menu-content>
+
+		<ion-nav-bar class="bar-header-geral" ng-class="barHeader">
+			<ion-nav-back-button class="button-clear">
+				<i class="ion-chevron-left"></i> Voltar
+			</ion-nav-back-button>
+
+			<ion-nav-buttons side="left">
+				<button class="button button-clear button-icon light ion-navicon button-light" menu-toggle="left"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+
+		<ion-nav-view name="menuContent">
+
+		</ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+
+		<ion-content>
+
+			<div class="row bg_top_sidebar">
+				<div class="col">
+					<div class="info-posicao" ng-controller="MenuCtrl as vm">
+						<p class="info-label-aluno">{{ vm.matricula }} - {{ vm.aluno | capitalize:true }}</p>
+						<p class="info-label-curso">{{ vm.curso }}</p>
+						<p class="info-label-curso">{{ vm.semestre }}</p>
+					</div>
+				</div>
+			</div>
+
+			<ion-list>
+				<ion-item ui-sref="menu.home" menu-close>
+					<div class="row tamanho-item">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/home-min.png" class="img-item">
+						</div>
+						<div class="col col-75 label-item-menu">
+							Home
+						</div>
+					</div>
+				</ion-item>
+				<ion-item ui-sref="menu.notas" menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/notas-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{nota}}
+						</div>
+					</div>
+				</ion-item>
+				<ion-item ui-sref="menu.biblioteca" menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/biblioteca-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{biblioteca}}
+						</div>
+					</div>
+				</ion-item>
+				<ion-item ui-sref="menu.financeiro" menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/financeiro-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{financeiro}}
+						</div>
+					</div>
+				</ion-item>
+				<!--<ion-item href="#" onclick="window.open('http://site.unifacef.com.br/wp-content/uploads/2016/01/GERAL_2016.pdf', '_system', 'location=yes'); return false;"
+					menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/guia-academico-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{guia}}
+						</div>
+					</div>
+				</ion-item>
+				<ion-item href="#" onclick="window.open('http://site.unifacef.com.br/wp-content/uploads/2016/04/Calendario-de-provas_1%C2%BA-bim_2016_1.pdf', '_system', 'location=yes'); return false;"
+					menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/calendar-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{calendario}}
+						</div>
+					</div>
+				</ion-item>
+				<ion-item href="#" onclick="window.open('http://ava-grad.unifacef.com.br/login/index.php', '_system', 'location=yes'); return false;"
+					menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/aluno-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{avaGrad}}
+						</div>
+					</div>
+				</ion-item>
+				<ion-item href="#" onclick="window.open('http://ava.unifacef.com.br/pos-graduacao/login/index.php', '_system', 'location=yes'); return false;"
+					menu-close>
+					<div class="row tamanho-item ">
+						<div class="col col-25 tamanho-item ">
+							<img src="imagens/aluno-min.png" class="img-menu">
+						</div>
+						<div class="col col-75 label-item-menu">
+							{{avaPos}}
+						</div>
+					</div>
+				</ion-item>-->
+			</ion-list>
+
+			<div ng-controller="VersaoCtrl as vm">
+				<div class="espacamento-sair-versao">
+
+					<div class="row link-sair-versao" ng-click="sair()" menu-close>
+						<div class="col">
+							<i class="fa fa-sign-out fa-2x"></i> Sair
+						</div>
+					</div>
+
+					<div class="row link-sair-versao">
+						<div class="col text-right">
+							Versão {{ vm.versao }}
+						</div>
+					</div>
+
+				</div>
+			</div>
+			
+		</ion-content>
+
+	</ion-side-menu>
+
+</ion-side-menus>

@@ -1,0 +1,37 @@
+<ion-view view-title="{{biblioteca}}" ng-controller="BiblioDetalheGeral as vm">
+
+	<ion-nav-buttons side="primary">
+		<a href="#/menu/listaMateriais"
+			 class="button icon-left ion-chevron-left
+			 				button-clear button-light" menu-close>Voltar</a>
+	</ion-nav-buttons>
+
+  <ion-content padding="true" class="detalhe-biblio">
+
+    	<p style="font-weight: bold;text-align: center;">{{ vm.ttMaterial }}</p>
+
+
+			<div class="row" ng-if="vm.lgGeral">
+					<div class="col text-center"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+			</div>
+			<p ng-if="!vm.lgGeral">
+				<span style="font-weight: bold;color: #000;">Dados p/ retirada da obra:</span> {{vm.ddRetiradaObra}}
+			</p>
+
+			<div class="row" ng-if="vm.lgGeral">
+					<div class="col text-center"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+			</div>
+			<div ng-if="!vm.lgGeral">
+			<p>
+				<span style="font-weight: bold;color: #000;">Autores:</span>
+			</p>
+
+				<ion-list>
+					<div class="item-detalhe-geral" ng-repeat="autores in vm.listaAutores">
+							{{autores.nome | capitalize:true}} - {{autores.situacao | capitalize:true}}
+					</div>
+				</ion-list>
+			</div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+<ion-view view-title="{{nota}}" ng-controller="NotasCtrl as vm">
+    <ion-content>
+
+        <div class="item-notas">
+            <select class="select-blue" ng-model="vm.semestre" ng-change="vm.carregarSemestre()">
+                <option 
+                    class="option-notas" 
+                    ng-repeat="mat in vm.matriculas" 
+                    value="{{mat.id}}" 
+                    ng-selected="vm.semestre == mat.id"
+                >{{ mat.serie }}</option>
+            </select>
+        </div>
+
+    </ion-content>
+
+    <ion-content class="margin-top-big">
+        <div class="row" ng-if="vm.isLoading">
+            <div class="col text-center"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+        </div>
+        <ion-list ng-if="!vm.isLoading">
+
+            <ion-item class="item-notas" ng-repeat="nota in vm.notas">
+                <div class="row gray-line">
+                    <div class="col item-text-wrap"><strong>{{ nota.nomeDisciplina }}</strong></div>
+                </div>
+                <div class="row">
+                    <div class="col"> Nota 1: {{nota.nota1}} </div>
+                    <div class="col"> Falta 1: {{nota.falta1}} </div>
+                    <div class="col"><strong> MÉDIA: {{nota.media || '--'}} </strong></div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Nota 2: {{nota.nota2}} </div>
+                    <div class="col"> Falta 2: {{nota.falta2}} </div>
+                    <div class="col"></div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Sub: {{nota.recupera1 || '--'}} </div>
+                    <div class="col"> Freq: {{nota.frequencia + '%'}} </div>
+                    <div class="col"></div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col"> Situação: {{nota.situacao}} </div>
+                </div>
+
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

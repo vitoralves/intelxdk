@@ -1,0 +1,38 @@
+<ion-view view-title="{{biblioteca}}" ng-controller="BiblioListaMateriais as vm">
+	<ion-nav-buttons side="primary">
+		<a href="#/menu/biblioteca"
+		   class="button icon-left ion-chevron-left
+			 				button-clear button-light" menu-close>Voltar</a>
+	</ion-nav-buttons>
+	<ion-content>
+
+
+		<div class="row" ng-if="vm.lgListaMateriais">
+				<div class="col text-center"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+		</div>
+		<ion-list id="listaMateriais" ng-if="!vm.lgListaMateriais">
+
+				<div class="row link-efeito"
+						 ng-repeat="material in vm.listaMateriais"
+						 ng-click="vm.detalhe(material.id,material.material)">
+
+					<div class="col link-materiais">
+
+						<img ng-src="{{vm.img}}" class="img-item-materiais">
+
+						<h6 class="txt-tit-materiais-item"> {{ material.material}} </h6>
+
+						<p class="txt-desc-materiais-item">
+							Qtd. {{ material.valor1 }} Disponível {{ material.valor2 }}
+						</p>
+
+						<i class="icon ion-android-search ajuste-icone"></i>
+
+					</div>
+
+				</div>
+
+		</ion-list>
+
+	</ion-content>
+</ion-view>

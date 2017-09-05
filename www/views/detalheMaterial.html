@@ -1,0 +1,21 @@
+<ion-view view-title="{{biblioteca}}">
+
+	<ion-nav-buttons side="primary">
+		<a href="#/menu/listaMateriais"
+			 class="button icon-left ion-chevron-left
+			 				button-clear button-light" menu-close>Voltar</a>
+	</ion-nav-buttons>
+
+	<ion-tabs  id="abas">
+	  <ion-tab title="Geral" href="#/menu/detalheMaterial/detalheMaterialGeral">
+	    <ion-nav-view name="tab-geral"></ion-nav-view>
+	  </ion-tab>
+		<ion-tab title="Assuntos" href="#/menu/detalheMaterial/detalheMaterialAssuntos">
+	    <ion-nav-view name="tab-assuntos"></ion-nav-view>
+	  </ion-tab>
+		<ion-tab title="Exemplares" href="#/menu/detalheMaterial/detalheMaterialExemplares">
+	    <ion-nav-view name="tab-exemplares"></ion-nav-view>
+	  </ion-tab>
+	</ion-tabs>
+
+</ion-view>

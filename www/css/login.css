@@ -1,0 +1,92 @@
+.bg-login {
+  background-color: #da0000;
+  padding-top: 10%;
+}
+
+.bg-div {
+  background-color: #da0000;
+  border-color:  #da0000;
+}
+
+.img-login {
+  width: 88%;
+}
+
+.lb-input {
+  color: white;
+}
+
+.tit-login {
+  color: white;
+  text-align: center;
+}
+
+
+#idUsuario, #idSenha{
+    background-color: #da0000;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#idUsuario:focus, #idSenha:focus {
+  border-bottom: 2px solid #fff;
+  color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pos-input {
+  margin: 0px;
+  margin-left: -15px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/* h2 ficar responsivo */
+@media only screen and (min-width: 366px) {
+    h2{
+        font-size: 200%;
+    }
+}
+
+
+@media only screen and (max-width: 365px) {
+    h2{
+        font-size: 170%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    h2{
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    h2{
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 210px) {
+    h2{
+        font-size: 110%;
+    }
+}
+
+@media only screen and (max-width: 190px) {
+    h2{
+        font-size: 90%;
+    }
+}
+
+}

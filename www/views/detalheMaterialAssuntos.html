@@ -1,0 +1,23 @@
+<ion-view view-title="{{biblioteca}}" ng-controller="BiblioDetalheAssuntos as vm">
+
+	<ion-nav-buttons side="primary">
+		<a href="#/menu/listaMateriais"
+			 class="button icon-left ion-chevron-left
+			 				button-clear button-light" menu-close>Voltar</a>
+	</ion-nav-buttons>
+
+  <ion-content padding="true" class="detalhe-biblio">
+
+		<div class="row" ng-if="vm.lgAssuntos">
+				<div class="col text-center"><i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i></div>
+		</div>
+		<ion-list ng-if="!vm.lgAssuntos">
+			<div class="item-detalhe-assunto" ng-repeat="assuntos in vm.listaAssuntos">
+					{{assuntos.nome | capitalize:true}}
+			</div>
+		</ion-list>
+
+
+  </ion-content>
+
+</ion-view>

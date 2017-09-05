@@ -1,0 +1,91 @@
+<ion-view view-title="Portal do Aluno" menuClose ng-controller="HomeCtrl as vm">
+	<ion-content>
+
+		<div class="row">
+			<div class="col">
+				<h5 class="tit-aluno"> Olá, {{ vm.aluno | capitalize:true }} </h5>
+			</div>
+		</div>
+
+		<a ui-sref="menu.notas" menu-close>
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/notas.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">Notas e Faltas</h4>
+					<p class="txt-desc-menu-item">Consulta notas e faltas</p>
+				</div>
+			</div>
+		</a>
+
+		<a ui-sref="menu.biblioteca" id="idBiblio" menu-close >
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/biblioteca.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">Biblioteca</h4>
+					<p class="txt-desc-menu-item">Consulta de livros revistas, midías
+																				na biblioteca da instituição</p>
+				</div>
+			</div>
+		</a>
+
+		<a ui-sref="menu.financeiro" menu-close>
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/financeiro.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">Financeiro</h4>
+					<p class="txt-desc-menu-item">Mensalidades</p>
+				</div>
+			</div>
+		</a>
+
+		<!--<a href="#" onclick="window.open('http://site.unifacef.com.br/wp-content/uploads/2016/01/GERAL_2016.pdf', '_system', 'location=yes'); return false;" menu-close>
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/guia_academico.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">Guia Acadêmico 2016</h4>
+					<p class="txt-desc-menu-item">Faça o Dowload </p>
+				</div>
+			</div>
+		</a>
+
+		<a href="#" onclick="window.open('http://site.unifacef.com.br/wp-content/uploads/2016/04/Calendario-de-provas_1%C2%BA-bim_2016_1.pdf', '_system', 'location=yes'); return false;" menu-close>
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/calendar2.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">Calendário de Provas</h4>
+					<p class="txt-desc-menu-item">Faça o Dowload do Calendário de
+																				Provas 1º B 2016</p>
+				</div>
+			</div>
+		</a>-->
+
+		<!--<a href="#" onclick="window.open('http://ava-grad.unifacef.com.br/login/index.php', '_system', 'location=yes'); return false;">
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/aluno2.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">AVA Graduação</h4>
+					<p class="txt-desc-menu-item">Acesse o Ambiente de Aprendizagem
+																				Graduação versão Web</p>
+				</div>
+			</div>
+		</a>-->
+
+		<!--<a href="#" onclick="window.open('http://ava.unifacef.com.br/pos-graduacao/login/index.php', '_system', 'location=yes'); return false;">
+			<div class="row linha">
+				<div class="col bg-item-menu lateral">
+					<img src="imagens/aluno2.png" class="img-item-menu">
+					<h4 class="txt-tit-menu-item">AVA Pós-Graduação</h4>
+					<p class="txt-desc-menu-item">Acesse o Ambiente de Aprendizagem
+																				Pós-Graduação versão Web</p>
+				</div>
+			</div>
+		</a>-->
+
+	</ion-content>
+    <!--No portal da fdf não possui email para suporte ténico
+    <a href="mailto:suporte@facef.br?subject=[Suporte%20App%20Mobile]">
+	   <button class="email">
+          <i class="icon ion-email"></i>
+       </button>
+    </a>-->    
+</ion-view>
